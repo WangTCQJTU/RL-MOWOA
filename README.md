@@ -30,12 +30,7 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
 
 
 ## Highlights
-- Pareto‑aware leader sampling:
-  - Combines crowding distance, hypervolume contribution, knee curvature, occupancy and edge weights
-  - Progress‑adaptive mixing to balance representativeness and diversity
-- Structured uniformization pipeline:
-  - Non‑domination sorting → extreme preservation → grid uniformization → HV/min‑distance scoring
-  - RSM anchors, boundary anchors, x1 gap fillers and HV‑based elite injection
+
 - Mixed policy+parameter control via RL:
   - Action vector `[SF, b, p, mutation_rate]` with ε‑greedy selection
   - Progress‑adjusted `p_eff` switches between encircling and spiral updates
@@ -43,7 +38,7 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
   - `step_sizes = [0.01, 1, 0.01]` applied after every update/mutation
 
 ## Configuration Reference
-- See `parameters.csv` for concrete values and code locations
+
 - Key settings:
   - Seeds per run: `rng(33 + run - 1)`
   - Termination by evaluations: `Max_evals` (progress and WOA coefficients use `Max_iteration` for scheduling)
@@ -82,4 +77,3 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
 
 ## Citation
 If you use this code in academic work, please cite the corresponding paper. Consider adding a `CITATION.cff` or provide a BibTeX entry.
-
