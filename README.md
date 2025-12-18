@@ -43,7 +43,7 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
   - RL: `learning_rate=0.12`, `discount_factor=0.95`, `epsilon=0.35→0.05` with `epsilon_decay=0.9975`
   - Action space: `SF=[1.15,1.25,1.35,1.45]`, `b=[1.2,1.4,1.6,1.8]`, `p=[0.60,0.65,0.70,0.75]`, `mutation=[0.08,0.10,0.12,0.14]`
   - Reward terms: HV/IGD/Spacing/Convergence/Diversity/Spread/Progress with progress‑adaptive weights
-  - Reference PF files: `results/reference_pareto/` (`zdt1_true_pf.csv`, `zdt2_true_pf.csv`, `zdt3_true_pf.csv`, `dtlz7_true_pf.csv`, `rsm_true_pf.csv`)
+  - Reference PF files: `results/reference_pareto/` (`zdt1_true_pf.csv`, `zdt2_true_pf.csv`, `zdt3_true_pf.csv`, `dtlz7_true_pf.csv`
 
 ## Outputs
 - CSV per run: `results/RSM/pareto_run_XX.csv`
