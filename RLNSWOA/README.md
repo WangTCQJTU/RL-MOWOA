@@ -28,12 +28,6 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
 
 
 ## Highlights
-- Pareto‑aware leader sampling:
-  - Combines crowding distance, hypervolume contribution, knee curvature, occupancy and edge weights
-  - Progress‑adaptive mixing to balance representativeness and diversity
-- Structured uniformization pipeline:
-  - Non‑domination sorting → extreme preservation → grid uniformization → HV/min‑distance scoring
-  - RSM anchors, boundary anchors, x1 gap fillers and HV‑based elite injection
 - Mixed policy+parameter control via RL:
   - Action vector `[SF, b, p, mutation_rate]` with ε‑greedy selection
   - Progress‑adjusted `p_eff` switches between encircling and spiral updates
