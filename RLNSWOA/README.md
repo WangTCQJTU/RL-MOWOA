@@ -49,7 +49,7 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
 ## Reference True Pareto Fronts (Tests)
 - Provided for four standard test functions, to support offline metric evaluation:
   - Location: `results/reference_pareto/`
-  - Files: `zdt1_true_pf.csv`, `zdt2_true_pf.csv`, `zdt3_true_pf.csv`, `dtlz7_true_pf.csv`, `rsm_true_pf.csv`
+  - Files: `zdt1_true_pf.csv`, `zdt2_true_pf.csv`, `zdt3_true_pf.csv`, `dtlz7_true_pf.csv`
 - Usage:
   - Use for IGD/Spread comparisons in external analysis
   - To enable automatic IGD in code, set `pf_path` in `RL_Utils.m:109-118` to the desired CSV (or select based on the problem type)

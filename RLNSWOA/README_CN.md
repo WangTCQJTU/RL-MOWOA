@@ -37,7 +37,7 @@
 
 - 已提供四个标准测试函数的参考真实帕累托，用于离线指标评估：
   - 路径：`results/reference_pareto/`
-  - 文件：`zdt1_true_pf.csv`、`zdt2_true_pf.csv`、`zdt3_true_pf.csv`、`dtlz7_true_pf.csv`、`rsm_true_pf.csv`
+  - 文件：`zdt1_true_pf.csv`、`zdt2_true_pf.csv`、`zdt3_true_pf.csv`、`dtlz7_true_pf.csv`
 - 用途：
   - 可用于计算 IGD/Spread 等对比指标的离线评估
   - 若需在代码中自动使用，请在`RL_Utils.m:109-118`将`pf_path`指向相应的 CSV（或根据问题类型选择对应文件）
