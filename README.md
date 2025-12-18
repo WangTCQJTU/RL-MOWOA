@@ -34,8 +34,6 @@ This repository provides the minimal, runnable core of the Reinforcement‑Learn
 - Mixed policy+parameter control via RL:
   - Action vector `[SF, b, p, mutation_rate]` with ε‑greedy selection
   - Progress‑adjusted `p_eff` switches between encircling and spiral updates
-- Fixed step quantization and boundary reflection:
-  - `step_sizes = [0.01, 1, 0.01]` applied after every update/mutation
 
 ## Configuration Reference
 
