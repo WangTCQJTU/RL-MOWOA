@@ -40,20 +40,11 @@ Reinforcement-Learning enhanced Non-dominated Sorting Whale Optimization Algorit
   - Termination by evaluations: `Max_evals` (progress and WOA coefficients use `Max_iteration` for scheduling)
   - RL: `learning_rate=0.12`, `discount_factor=0.95`, `epsilon=0.35→0.05` with `epsilon_decay=0.9975`
   - Action space: `SF=[1.15,1.25,1.35,1.45]`, `b=[1.2,1.4,1.6,1.8]`, `p=[0.60,0.65,0.70,0.75]`, `mutation=[0.08,0.10,0.12,0.14]`
-  - Reward terms: Reward is constructed from multiple convergence and diversity indicators,with adaptive weighting guided by search progress (see paper for details).
-  - Reference PF files: `results/reference_pareto/` (`zdt1_true_pf.csv`, `zdt2_true_pf.csv`, `zdt3_true_pf.csv`, `dtlz7_true_pf.csv`
+  - Reward terms: Reward is constructed from multiple convergence and diversity indicators, with adaptive weighting guided by search progress (see paper for details).
 
 ## Outputs
 - CSV per run: `results/RSM/pareto_run_XX.csv`
 - Each file contains objective rows of the first Pareto front extracted from the final population
-
-## Reference True Pareto Fronts (Tests)
-- Provided for four standard test functions, to support offline metric evaluation:
-  - Location: `results/reference_pareto/`
-  - Files: `zdt1_true_pf.csv`, `zdt2_true_pf.csv`, `zdt3_true_pf.csv`, `dtlz7_true_pf.csv`, `rsm_true_pf.csv`
-- Usage:
-  - Use for IGD/Spread comparisons in external analysis
-  - To enable automatic IGD in code, set `pf_path` in `RL_Utils.m:109-118` to the desired CSV (or select based on the problem type)
 
 ## Reproducibility Tips
 - Keep seeds fixed for fair comparison across runs
